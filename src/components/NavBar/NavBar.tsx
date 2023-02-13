@@ -45,15 +45,15 @@ const NavBar = () => {
                 </ul>
                 <ul className="navbar-nav ms-auto d-none d-lg-inline-flex">
                     <li className="nav-item mx-2">
-                        <a className="nav-link text-dark h5" href="" target="blank"><i
+                        <a className="nav-link text-dark h5" href="www.gmail.sk" target="blank"><i
                             className="bi bi-envelope-at-fill color"/></a>
                     </li>
                     <li className="nav-item mx-2">
-                        <a className="nav-link text-dark h5" href="" target="blank"><i
+                        <a className="nav-link text-dark h5" href="www.facebook.org" target="blank"><i
                             className="bi bi-facebook color"/></a>
                     </li>
                     <li className="nav-item mx-2">
-                        <a className="nav-link text-dark h5" href="" target="blank"><i
+                        <a className="nav-link text-dark h5" href="www.twitter.sk" target="blank"><i
                             className="bi bi-twitter color"/></a>
                     </li>
                 </ul>

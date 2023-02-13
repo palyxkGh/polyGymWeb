@@ -12,7 +12,6 @@ import GalleryPage from './pages/GalleryPage';
 import ContestsPage from './pages/ContestsPage';
 // components
 import NavBar from './components/NavBar';
-import TrainingsNavbar from './components/TrainingsNavbar';
 
 // styles
 function App() {
@@ -20,7 +19,6 @@ function App() {
     <div className="App">
       <Router>
         <NavBar/>
-        {/*<TrainingsNavbar />*/}
         <div className="d-flex justify-content-lg-around back" >
           <Routes>
           <Route path={routePaths.home} element={<HomePage/>}/>
