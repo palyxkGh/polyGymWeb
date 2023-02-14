@@ -2,7 +2,7 @@ import * as React from 'react';
 
 const HistoryPage = () => {
     return (
-        <div>contests page</div>
+        <div>history page</div>
     );
 }
 

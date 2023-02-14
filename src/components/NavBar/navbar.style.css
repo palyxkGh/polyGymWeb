@@ -1,12 +1,39 @@
 .navbar {
     background-color: #1212da !important;
-
 }
 
-.background {
-    background-color: blanchedalmond;
+.navbar-collapse.in {
+    overflow-y: visible; /* Avoid !important, used it here only for priority */
 }
 
+.color-blue {
+    color: yellow !important;
+
+}
 .color {
     color: yellow !important;
 }
+
+.color:hover {
+    color: rgba(201, 184, 28, 1);
+    -webkit-animation: scale-up-center 0.4s ease-out both;
+    animation: scale-up-center 0.4s ease-out both;
+}
+
+@-webkit-keyframes scale-up-center {
+    0% {
+        transform: scale(0.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes scale-up-center {
+    0% {
+        transform: scale(0.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+

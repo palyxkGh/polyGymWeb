@@ -12,10 +12,13 @@ const NavBar = () => {
                 <span className="navbar-toggler-icon"></span>
             </button>
 
-            <div className=" collapse navbar-collapse" id="navbarNavDropdown">
+            <div className=" collapse navbar-collapse " id="navbarNavDropdown">
                 <ul className="navbar-nav ms-auto ">
                     <li className="nav-item">
                         <a className="nav-link mx-2 active color" aria-current="page" href={routePaths.info}>Aktualne info</a>
+                    </li>
+                    <li className="nav-item">
+                        <a className="nav-link mx-2 color" href={routePaths.history}>História klubu</a>
                     </li>
                     <li className="nav-item dropdown">
                         <a className="nav-link mx-2 dropdown-toggle color" href={routePaths.trainings}
@@ -23,24 +26,28 @@ const NavBar = () => {
                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Tréningy
                         </a>
-                        <ul className="dropdown-menu background" aria-labelledby="navbarDropdownMenuLink">
+                        <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <li><a className="dropdown-item" href={routePaths.trainings_group1}>Skupina 1</a></li>
                             <li><a className="dropdown-item" href={routePaths.trainings_group2}>Skupina 2</a></li>
                             <li><a className="dropdown-item" href={routePaths.trainings_parkour1}>Parkúr 1</a></li>
                             <li><a className="dropdown-item" href={routePaths.trainings_parkour2}>Parkúr 2</a></li>
-                            <li><a className="dropdown-item" href={routePaths.trainings_public}>Verejné</a></li>
-                            <li><a className="dropdown-item" href={routePaths.trainings_individual}>Individuálne</a>
+                            <li><a className="dropdown-item" href={routePaths.trainings_public}><i
+                                className="bi bi-people"/>Verejné</a></li>
+                            <li><a className="dropdown-item" href={routePaths.trainings_individual}><i className="bi bi-person c"/> Individuálne</a>
                             </li>
                         </ul>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link mx-2 color" href={routePaths.trainers}>Tréneri</a>
+                        <a className="nav-link mx-2 color" href={routePaths.gallery}>FotoGaléria</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link mx-2 color" href={routePaths.gallery}>Galéria</a>
+                        <a className="nav-link mx-2 color" href={routePaths.trainers}>Naši tréneri</a>
                     </li>
                     <li className="nav-item">
                         <a className="nav-link mx-2 color" href={routePaths.contests}>Súťaže</a>
+                    </li>
+                    <li className="nav-item">
+                        <a className="nav-link mx-2 color" href={routePaths.contacts}>Kontakty</a>
                     </li>
                 </ul>
                 <ul className="navbar-nav ms-auto d-none d-lg-inline-flex">

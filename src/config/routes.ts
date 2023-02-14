@@ -10,6 +10,7 @@ export const routePaths = {
     trainings_public : '/treningy/public',
     trainings_individual : '/treningy/individual',
     trainers : '/nasi-treneri',
+    trainerDetail: '/nasi-treneri/:id',
     gallery : '/fotogaleria',
     contests : '/sutaze',
     contacts : '/kontakty',

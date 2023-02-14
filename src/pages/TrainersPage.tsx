@@ -1,9 +1,12 @@
 import * as React from 'react';
+import TrainerCard from '../components/TrainerCard';
 
-const HistoryPage = () => {
+const TrainersPage = () => {
     return (
-        <div>trainers</div>
+        <div>
+        <TrainerCard id="1" name="trener1" phone="0" email="e" imageSrc="src"/>
+        </div>
     );
 }
 
-export default HistoryPage;
+export default TrainersPage;
