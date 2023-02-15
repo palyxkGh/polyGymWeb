@@ -15,3 +15,20 @@ export const routePaths = {
     contests : '/sutaze',
     contacts : '/kontakty',
 }
+
+
+export const configMap = [
+    {id: 'skupina1', route: routePaths.trainings_group1, name: 'Skupina1'},
+    {id: 'skupina2', route: routePaths.trainings_group2, name: 'Skupina2'},
+    {id: 'parkour1', route: routePaths.trainings_parkour1, name: 'Parkour1'},
+    {id: 'parkour2', route: routePaths.trainings_parkour2, name: 'Parkour2'},
+    {id: 'public', route: routePaths.trainings_public, name: 'Verejne'},
+    {id: 'individual', route: routePaths.trainings_individual, name: 'Individual'}
+];
+
+export const getRouteConfig = (searchId :string, ) => {
+    const result = configMap.find(i => i.id === searchId);
+    if(result){
+        return result;
+    }
+}

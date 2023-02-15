@@ -14,10 +14,10 @@
     color: yellow !important;
 }
 
-.color:hover {
+.color:active {
     color: rgba(201, 184, 28, 1);
-    -webkit-animation: scale-up-center 0.4s ease-out both;
-    animation: scale-up-center 0.4s ease-out both;
+    -webkit-animation: scale-up-center 2s ease-out both;
+    animation: scale-up-center 2s ease-out both;
 }
 
 @-webkit-keyframes scale-up-center {
