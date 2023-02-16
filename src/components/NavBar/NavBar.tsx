@@ -1,8 +1,9 @@
 import * as React from 'react';
 import {routePaths} from '../../config/routes';
 import './navbar.style.css';
-
+import { useLocation } from "react-router-dom";
 const NavBar = () => {
+    const location = useLocation();
     return (<nav className="navbar navbar-expand-lg navbar-light bg-info p-3">
         <div className="container-fluid">
             <a className="navbar-brand" href={routePaths.home}>Logo tu...</a>
@@ -15,25 +16,25 @@ const NavBar = () => {
             <div className=" collapse navbar-collapse " id="navbarNavDropdown">
                 <ul className="navbar-nav ms-auto ">
                     <li className="nav-item">
-                        <a className="nav-link mx-2 active color" aria-current="page" href={routePaths.info}>Aktualne info</a>
+                        <a className="nav-link mx-2 active color " href={`${location.pathname}/${routePaths.info}`} aria-current="page">Aktualne info</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link mx-2 color" href={routePaths.history}>História klubu</a>
+                        <a className="nav-link mx-2 color" href={`${location.pathname}/${routePaths.history}`}>História klubu</a>
                     </li>
                     <li className="nav-item dropdown">
-                        <a className="nav-link mx-2 dropdown-toggle color" href={routePaths.trainings}
+                        <a className="nav-link mx-2 dropdown-toggle color" href={`${location.pathname}/${routePaths.trainings}`}
                            id="navbarDropdownMenuLink"
                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Tréningy
                         </a>
                         <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a className="dropdown-item" href={routePaths.trainings_group1}>Skupina 1</a></li>
-                            <li><a className="dropdown-item" href={routePaths.trainings_group2}>Skupina 2</a></li>
-                            <li><a className="dropdown-item" href={routePaths.trainings_parkour1}>Parkúr 1</a></li>
-                            <li><a className="dropdown-item" href={routePaths.trainings_parkour2}>Parkúr 2</a></li>
-                            <li><a className="dropdown-item" href={routePaths.trainings_public}><i
+                            <li><a className="dropdown-item" href={`${location.pathname}/${routePaths.trainings_group1}`}>Skupina 1</a></li>
+                            <li><a className="dropdown-item" href={`${location.pathname}/${routePaths.trainings_group2}`}>Skupina 2</a></li>
+                            <li><a className="dropdown-item" href={`${location.pathname}/${routePaths.trainings_parkour1}`}>Parkúr 1</a></li>
+                            <li><a className="dropdown-item" href={`${location.pathname}/${routePaths.trainings_parkour2}`}>Parkúr 2</a></li>
+                            <li><a className="dropdown-item" href={`${location.pathname}/${routePaths.trainings_public}`}><i
                                 className="bi bi-people"/>Verejné</a></li>
-                            <li><a className="dropdown-item" href={routePaths.trainings_individual}><i className="bi bi-person c"/> Individuálne</a>
+                            <li><a className="dropdown-item" href={`${location.pathname}/${routePaths.trainings_individual}`}><i className="bi bi-person c"/> Individuálne</a>
                             </li>
                         </ul>
                     </li>
