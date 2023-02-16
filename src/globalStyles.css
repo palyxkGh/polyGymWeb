@@ -1,0 +1,16 @@
+:root {
+    --yellow-primary: rgba(201, 184, 28, 1);
+    --yellow-secondary: lightgoldenrodyellow;
+    --blue-primary: blue;
+    --blue-secondary: #4e68fd;
+}
+
+
+.color-blue {
+    color: var(--blue-primary)
+}
+
+.color-blue-light {
+    color: var(--blue-secondary)
+}
+

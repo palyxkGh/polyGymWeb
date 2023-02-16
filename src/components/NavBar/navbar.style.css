@@ -2,9 +2,6 @@
     background-color: #1212da !important;
 }
 
-.navbar-collapse.in {
-    overflow-y: visible; /* Avoid !important, used it here only for priority */
-}
 
 .color-blue {
     color: yellow !important;

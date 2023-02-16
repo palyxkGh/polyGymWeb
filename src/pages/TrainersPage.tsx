@@ -1,28 +1,20 @@
 import * as React from 'react';
-import {useEffect, useState} from 'react';
 import TrainerCard from '../components/TrainerCard';
-import {trainerCard_DATA} from '../config/trainersData';
-import './trainersPage.style.css';
+import {trainerCard_DATA} from '../data/trainersData';
+import './trainersPage.styles.css';
+import {Trainer} from '../types/trainers';
+
 const TrainersPage = () => {
 
-    const [selectedTrainer, setSelectedTrainer] = useState<number|null>(null);
-
-    useEffect(() => {
-        console.log(selectedTrainer);
-    },[selectedTrainer])
     return (
-        <div className="flex-column trainersPage">
-        <div className="d-flex flex-row">
-            {
-
-                trainerCard_DATA.map((trainer) => {
-                    return <TrainerCard key={trainer.id} {...trainer} onClick={(id) => setSelectedTrainer(id)}/>
-            })
-            }
-        </div>
-        <div className="flex-column">
-            detail: <p>{selectedTrainer}</p>
-        </div>
+        <div className="trainersPage">
+            <div className="d-flex flex-column trainersColumn">
+                {
+                    trainerCard_DATA.map((trainer: Trainer) => {
+                        return (<TrainerCard key={trainer.id} {...trainer}/>);
+                    })
+                }
+            </div>
         </div>
     );
 }

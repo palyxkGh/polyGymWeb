@@ -14,6 +14,7 @@ import ContestsPage from './pages/ContestsPage';
 import NavBar from './components/NavBar';
 
 // styles
+
 function App() {
   return (
     <div className="App">
