@@ -3,10 +3,10 @@ import './trainerCard.style.css';
 import {getRouteConfig} from '../../config/routes';
 import {Trainer} from '../../types/trainers';
 
-import trainer_1 from '../../../src/assets/images/trainers/marek_gadzinovsky.png';
-import trainer_2 from '../../../src/assets/images/trainers/vladimir_klacek.png';
-import trainer_3 from '../../../src/assets/images/trainers/jakub_miscik.png'
-import trainer_4 from '../../../src/assets/images/trainers/jakub_petrunko.png'
+import trainer_1 from '../../assets/images/trainers/marek_gadzinovsky.png';
+import trainer_2 from '../../assets/images/trainers/vladimir_klacek.png';
+import trainer_3 from '../../assets/images/trainers/jakub_miscik.png'
+import trainer_4 from '../../assets/images/trainers/jakub_petrunko.png'
 
 const getImage = (id: number) => {
     switch (id) {
