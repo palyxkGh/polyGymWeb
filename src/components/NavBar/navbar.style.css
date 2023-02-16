@@ -2,19 +2,18 @@
     background-color: #1212da !important;
 }
 
-
-.color-blue {
-    color: yellow !important;
-
-}
 .color {
     color: yellow !important;
 }
 
 .color:active {
     color: rgba(201, 184, 28, 1);
-    -webkit-animation: scale-up-center 2s ease-out both;
-    animation: scale-up-center 2s ease-out both;
+    -webkit-animation: scale-up-center 0.3s ease-out both;
+    animation: scale-up-center 0.3s ease-out both;
+}
+
+.color:hover {
+    opacity: 0.5;
 }
 
 @-webkit-keyframes scale-up-center {
