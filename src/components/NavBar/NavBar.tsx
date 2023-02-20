@@ -1,5 +1,6 @@
 import * as React from 'react';
-import {routePaths} from '../../config/routes';
+import {configMap, routePaths} from '../../config/routes';
+import {RouteConfig} from '../../types/routeConfig';
 import './navbar.style.css';
 
 const NavBar = () => {
@@ -27,14 +28,12 @@ const NavBar = () => {
                             Tréningy
                         </a>
                         <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a className="dropdown-item" href={routePaths.trainings_group1}>Skupina 1</a></li>
-                            <li><a className="dropdown-item" href={routePaths.trainings_group2}>Skupina 2</a></li>
-                            <li><a className="dropdown-item" href={routePaths.trainings_parkour1}>Parkúr 1</a></li>
-                            <li><a className="dropdown-item" href={routePaths.trainings_parkour2}>Parkúr 2</a></li>
-                            <li><a className="dropdown-item" href={routePaths.trainings_public}><i
-                                className="bi bi-people"/>Verejné</a></li>
-                            <li><a className="dropdown-item" href={routePaths.trainings_individual}><i className="bi bi-person c"/> Individuálne</a>
-                            </li>
+                            {
+                                configMap.map(({id, route,name}: RouteConfig, index) => {
+                                return (
+                                    <li key={id}><a className="dropdown-item" href={route}>{name}</a></li>
+                                )})
+                            }
                         </ul>
                     </li>
                     <li className="nav-item">

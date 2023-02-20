@@ -8,7 +8,12 @@
     box-shadow: 15px 9px 5px 0 rgba(0,0,0,0.75);
 }
 
+.wrap {
+    word-break: break-word;
+    white-space: break-spaces;
+}
+
 .img {
-    width: 150px;
-    height: 200px;
+    padding: 10px;
+    align-self: center;
 }

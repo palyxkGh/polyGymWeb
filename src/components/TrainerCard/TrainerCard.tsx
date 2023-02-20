@@ -31,14 +31,14 @@ const TrainerCard: React.FC<Trainer> = ({
                                             email,
                                             trainings
                                         }: Trainer) => {
-    return <div className="card d-flex flex-column card-style">
-        <div className="d-flex flex-row card-body justify-content-between">
-            <div className="d-flex flex-column">
+    return <div className="card container-fluid card-style">
+        <div className="row wrap">
+            <div className="col-sm-6">
                 <p className="h4">{name}</p>
                 <p className="h6">{education}</p>
                 <p className="h6">{qualification}</p>
-                <p className="h6">Člen od roku: {since}</p>
-                <div className="d-flex flex-row justify-content-around p-2 ">
+                <p className="h6">{since}</p>
+                <div className="d-flex flex-column-sm justify-content-around p-2">
                     <div className="d-flex flex-column p-1 justify-content-between m-2">
                         <div className="m-1">
                             <i className="bi bi-telephone"/>
@@ -57,17 +57,17 @@ const TrainerCard: React.FC<Trainer> = ({
                     </div>
                 </div>
             </div>
-            <div className="card-img img">
+            <div className="col-sm-6 img">
                 <img src={getImage(id)} width="100%" className="img-fluid" height="auto" alt={name}/>
             </div>
         </div>
-        <div className="card-footer d-flex flex-row">
-            <div className="d-flex h6 align-self-center">Tréningy:</div>
+        <div className="card-footer row">
+            <div className="h6 align-self-center col">Tréningy:</div>
             {
                 trainings.map(t => {
                     const config = getRouteConfig(t);
-                    return <div className="p-2" key={t}><a className="btn btn-outline-info" key={t} href={config?.route}
-                                                           role="button">{config?.name}</a></div>
+                    return <div className="col p-1"><a className="btn btn-outline-info p-2" key={t} href={config?.route}
+                                   role="button">{config?.name}</a></div>
                 })
             }
         </div>
