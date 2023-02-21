@@ -38,24 +38,24 @@ const TrainerCard: React.FC<Trainer> = ({
                 <p className="h6">{education}</p>
                 <p className="h6">{qualification}</p>
                 <p className="h6">{since}</p>
-                <div className="d-flex flex-column-sm justify-content-around p-2">
-                    <div className="d-flex flex-column p-1 justify-content-between m-2">
-                        <div className="m-1">
-                            <i className="bi bi-telephone"/>
-                        </div>
-                        <div className="m-1">
-                            <i className="bi bi-envelope"/>
-                        </div>
-                    </div>
-                    <div className="d-flex flex-column p-1 justify-content-between m-2">
-                        <div className="m-1">
-                            <p className="card-subtitle">{phone}</p>
-                        </div>
-                        <div className="m-1">
-                            <p className="card-subtitle">{email}</p>
-                        </div>
-                    </div>
-                </div>
+                {/*<div className="d-flex flex-column-sm justify-content-around p-2">*/}
+                {/*    <div className="d-flex flex-column p-1 justify-content-between m-2">*/}
+                {/*        <div className="m-1">*/}
+                {/*            <i className="bi bi-telephone"/>*/}
+                {/*        </div>*/}
+                {/*        <div className="m-1">*/}
+                {/*            <i className="bi bi-envelope"/>*/}
+                {/*        </div>*/}
+                {/*    </div>*/}
+                {/*    /!*<div className="d-flex flex-column p-1 justify-content-between m-2">*!/*/}
+                {/*    /!*    <div className="m-1">*!/*/}
+                {/*    /!*        <p className="card-subtitle">{phone}</p>*!/*/}
+                {/*    /!*    </div>*!/*/}
+                {/*    /!*    <div className="m-1">*!/*/}
+                {/*    /!*        <p className="card-subtitle">{email}</p>*!/*/}
+                {/*    /!*    </div>*!/*/}
+                {/*    /!*</div>*!/*/}
+                {/*</div>*/}
             </div>
             <div className="col-sm-6 img">
                 <img src={getImage(id)} width="100%" className="img-fluid" height="auto" alt={name}/>

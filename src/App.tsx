@@ -10,6 +10,7 @@ import TrainingsPage from './pages/TrainingsPage';
 import TrainersPage from './pages/TrainersPage';
 import GalleryPage from './pages/GalleryPage';
 import ContestsPage from './pages/ContestsPage';
+import ContactsPage from './pages/ContactsPage';
 // components
 import NavBar from './components/NavBar';
 
@@ -29,6 +30,7 @@ function App() {
           <Route path={routePaths.trainers} element={<TrainersPage/>}/>
           <Route path={routePaths.gallery} element={<GalleryPage/>}/>
           <Route path={routePaths.contests} element={<ContestsPage/>}/>
+          <Route path={routePaths.contacts} element={<ContactsPage/>}/>
           </Routes>
         </div>
       </Router>

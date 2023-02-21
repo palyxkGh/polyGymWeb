@@ -11,7 +11,6 @@ export const routePaths = {
     trainings_individual : '/treningy/individual',
     trainings_racers : '/treningy/pretekári',
     trainers : '/nasi-treneri',
-    trainerDetail: '/nasi-treneri/:id',
     gallery : '/fotogaleria',
     contests : '/sutaze',
     contacts : '/kontakty',
