@@ -1,7 +1,7 @@
 :root {
-    --yellow-primary: rgba(201, 184, 28, 1);
+    --yellow-primary: #F4BE18;
     --yellow-secondary: lightgoldenrodyellow;
-    --blue-primary: blue;
+    --blue-primary: #14145E;
     --blue-secondary: #4e68fd;
 }
 
